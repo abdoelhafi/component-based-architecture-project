@@ -2,7 +2,7 @@
 
 ***Membres de groupe:***
 
-*KOTBI Abderrahmane & El HAFI Abdessamad*
+*KOTBI Abderrahmane & El HAFI Abdessamad* & Salah Eddine Qatab
 ===
 
 > La première partie contient les éléments suivants:
@@ -20,30 +20,7 @@
 > * Une présentation des différents drivers pour chaque niveaux.
 > * Une description détaillée de chaque choix technique. 
 
-- [Projet ALBC](#projet-albc)
-  * [Modules, Fonctionnalités, et Inputs/Outputs](#modules-fonctionnalités-et-inputsoutputs)
-    + [1) Tweet Service](#1-tweet-service)
-    + [2) Search service](#2-search-service)
-    + [3) User TimeLine Service](#3-user-timeline-service)
-    + [4) Home TimeLine service](#4-home-timeline-service)
-    + [5) Social Graph Service](#5-social-graph-service)
-    + [6) Direct messages Service](#6-direct-messages-service)
-  * [Les interconnections](#les-interconnections)
-  * [Architecture Téchnique](#architecture-téchnique)
-    + [1) Service direct messages](#1-service-direct-messages)
-    + [2) Service social graph](#2-service-social-graph)
-    + [3) Service home timeline](#3-service-home-timeline)
-    + [4) Service user timeline](#4-service-user-timeline)
-    + [5) Service search](#5-service-search)
-    + [6) Service tweet](#6-service-tweet)
-    + [7) Service twitter gateway](#7-service-twitter-gateway)
-  * [Cas d'interactions](#cas-dinteractions)
-  * [Drivers fonctionnels](#drivers-fonctionnels)
-    + [1) Base de données](#1-base-de-données)
-    + [2) Back-end](#2-back-end)
-    + [3) Front-end](#3-front-end)
-    + [4) Déployement et automation ](#4-déployement-et-automation)
-    + [5) Orchestration](#5-orchestration)
+[TOC]
 
 ---
 
@@ -132,35 +109,37 @@
 
 La partie suivante décrit les différents services de l'application séparément, ainsi que les cas d'interactions possibles entre eux.
 
-![alt](images/tech-architecture0.png)
+* En prenant en consédiration les fonctionnalités:
+
+![alt](images/albc-l38.png)
+
+* En prenant en consédiration les choix techniques:
+
+![alt](images/albc-l31.png)
 
 ### 1) Service direct messages
 
-![alt](images/tech-architecture1.png)
+![alt](images/albc-l33.png)
 
 ### 2) Service social graph
 
-![alt](images/tech-architecture2.png)
+![alt](images/albc-l36.png)
 
 ### 3) Service home timeline
 
-![alt](images/tech-architecture3.png)
+![alt](images/albc-l32.png)
 
 ### 4) Service user timeline
 
-![alt](images/tech-architecture4.png)
+![alt](images/albc-l35.png)
 
 ### 5) Service search
 
-![alt](images/tech-architecture5.png)
+![alt](images/albc-l34.png)
 
 ### 6) Service tweet
 
-![alt](images/tech-architecture6.png)
-
-### 7) Service twitter gateway
-
-![alt](images/tech-architecture7.png)
+![alt](images/albc-l37.png)
 
 ## Architecture Téchnique
 
