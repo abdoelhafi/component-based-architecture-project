@@ -216,18 +216,22 @@ Pour bien présenter l'information à l'utilisatuer final, on choisi d'utiliser 
 
 ### 4) Déployement et automation 
 
+Pour l'automation et le déployement, on a choisi d'utiliser `git` avec `husky`, `JUnit` et `Jest`, `docker` et `docker-compose`, et `Github Actions`. Le process qu'on va suivre est le suivant: on utilise `docker` et `docker-compose` pour contenir l'application et éxecuter les tests en `JUnit` et `Jest`. Par la suite, on utilise `git` pour le controle des versions et `husky` pour les executer les git-hooks. Ces derniers seront appelés par un `Github Actions` Workflow. Le résultats finals de ce workflow est un ensemble des logs permettants de vérifier que le realise de nouveau livrable était bien, et les images `docker` qui peuvent être déployées par le même workflow. On peut remarquer l'importance de ce process dans les points suivants:
+
 | **Aspect** | **Description** |
 | --------------- | --------------- |
-| **Performance** |  |
-| **Compatbilité** |  |
-| **Extensibilité** |  |
-| **Disponibilité** |  |
+| **Performance** | Ces téchnologies sont trés performantes et faciles (un tant soit peu) à implémenter. L'execution de ce process se fait dans le cloud. Il aura autant de ressource que le necessaire. |
+| **Compatbilité** | Ces technologies s'intégrent bien sans aucun problèmes. Il suffit de bien gérer les versions des dépendances, et les ports des containers `docker` pour assurer que tout marcherait bien. |
+| **Extensibilité** | La configuration de ce process se fait par des fichier `yaml` en générale. Ce qui permet de modifier le workflow facilement. |
+| **Disponibilité** | Les métrics de ces process serait toujours disponibles pour les vérifier même aprés. |
 
 ### 5) Orchestration
 
+Pour l'utilisation local on peut utiliser `docker swarm mode` pour l'orchestration des noeux et les réseaux des images. Ce mode intégré en `docker` permet d'avoir un modèle minmaliste de la production. Ce modèle contient toutes les images necessaires pour que l'application tourne. Chaque service est dans sa propre container. Le tout est dans le même réseaux. On peut avoir plusieur réplicas du même réseaux. Certes, ceci permet de tester l'application de un petit context de test. Mais, il faut penser vraiment à d'autre alternatives pour une production à grande échelle tel que `kubernetes`. Néanmoins, ce choix téchnique se justifie par:
+
 | **Aspect** | **Description** |
 | --------------- | --------------- |
-| **Performance** |  |
-| **Compatbilité** |  |
-| **Extensibilité** |  |
-| **Disponibilité** |  |
+| **Performance** | Il permet de voir l'état des réplicas et de controller leurs nombers et de redresser les noeux tombants. Tous se gère automatiquement, en se basant sur un fichier décrivant le stack trés proches au fichier utiliser pour `docker-compose`. |
+| **Compatbilité** | Il trés compatible avec `docker-compose` puisque leurs configurations ne se différnent pas beaucoup. |
+| **Extensibilité** | Ce choix téchnique permet de bien penser les autres choix en cas de production. |
+| **Disponibilité** | Ce service serait toujours disponibles et offre des logs décrivants l'état de l'application. |
