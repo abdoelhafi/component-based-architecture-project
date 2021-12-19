@@ -132,6 +132,35 @@
 
 La partie suivante décrit les différents services de l'application séparément, ainsi que les cas d'interactions possibles entre eux.
 
+![alt](images/tech-architecture0.png)
+
+### 1) Service direct messages
+
+![alt](images/tech-architecture1.png)
+
+### 2) Service social graph
+
+![alt](images/tech-architecture2.png)
+
+### 3) Service home timeline
+
+![alt](images/tech-architecture3.png)
+
+### 4) Service user timeline
+
+![alt](images/tech-architecture4.png)
+
+### 5) Service search
+
+![alt](images/tech-architecture5.png)
+
+### 6) Service tweet
+
+![alt](images/tech-architecture6.png)
+
+### 7) Service twitter gateway
+
+![alt](images/tech-architecture7.png)
 
 ## Architecture Téchnique
 
