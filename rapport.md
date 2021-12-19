@@ -274,3 +274,53 @@ Pour l'utilisation local on peut utiliser `docker swarm mode` pour l'orchestrati
 | **Compatbilité** | Il trés compatible avec `docker-compose` puisque leurs configurations ne se différnent pas beaucoup. |
 | **Extensibilité** | Ce choix téchnique permet de bien penser les autres choix en cas de production. |
 | **Disponibilité** | Ce service serait toujours disponibles et offre des logs décrivants l'état de l'application.* |
+
+## Implémentation (Prof of Concept)
+
+### 1) Twitter home page
+
+![alt](images/twitter-home-page.png)
+
+### 2) Sign in page
+
+![alt](images/sign-in.png)
+
+### 3) Uset TimeLine (mes tweet)
+
+![alt](images/tweets.png)
+
+### 4) Voir un tweet
+
+![alt](images/view-tweet.png)
+
+### 5) Créer un tweet
+
+![alt](images/create-tweet.png)
+
+### 6) Editer un tweet
+
+* Edition du tweet
+
+![alt](images/edit-tweet.png)
+
+* Tweet edité
+
+![alt](images/tweet-edited.png)
+
+### 7) Supprimer un tweet
+
+![alt](images/delete-tweet.png)
+
+### 8) Les services sur docker
+
+* Arpés l'execution du `docker-compose up`
+
+![alt](images/docker-run.png)
+
+* Aprés l'execution du `docker ps`
+
+![alt](images/docker-run.png)
+
+### 9) Base de données
+
+![alt](images/database.png)
