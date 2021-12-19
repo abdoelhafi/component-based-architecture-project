@@ -15,24 +15,35 @@
 > * Une manifestation des différents cas d'interactions avec l'utilisateur .
 > * Une description détaillés de chaque cas.
 
-## Table des matières: 
-  * [Modules, Fonctionnalités, et Inputs/Outputs](#modules--fonctionnalit-s--et-inputs-outputs)
-    + [1) Tweet Service](#1--tweet-service)
-    + [2) Search service](#2--search-service)
-    + [3) User TimeLine Service](#3--user-timeline-service)
-    + [4) Home TimeLine service](#4--home-timeline-service)
-    + [5) Social Graph Service](#5--social-graph-service)
-    + [6) Direct messages Service](#6--direct-messages-service)
+- [Projet ALBC](#projet-albc)
+  * [Modules, Fonctionnalités, et Inputs/Outputs](#modules-fonctionnalités-et-inputsoutputs)
+    + [1) Tweet Service](#1-tweet-service)
+    + [2) Search service](#2-search-service)
+    + [3) User TimeLine Service](#3-user-timeline-service)
+    + [4) Home TimeLine service](#4-home-timeline-service)
+    + [5) Social Graph Service](#5-social-graph-service)
+    + [6) Direct messages Service](#6-direct-messages-service)
   * [Les interconnections](#les-interconnections)
-  * [Architecture Téchnique](#architecture-t-chnique)
-    + [1) Service direct messages](#service-direct-messages)
-    + [2) Service social graph](#service-social-graph)
-    + [3) Service home timeline](#service-home-timeline)
-    + [4) Service user timeline](#service-user-timeline)
-    + [5) Service search](#service-search)
-    + [6) Service tweet](#service-tweet)
-    + [7) Service twitter gateway](#service-twitter-gateway)
-  * [Cas d'interactions](#cas-d-interactions)
+  * [Architecture Téchnique](#architecture-téchnique)
+    + [1) Service direct messages](#1-service-direct-messages)
+    + [2) Service social graph](#2-service-social-graph)
+    + [3) Service home timeline](#3-service-home-timeline)
+    + [4) Service user timeline](#4-service-user-timeline)
+    + [5) Service search](#5-service-search)
+    + [6) Service tweet](#6-service-tweet)
+    + [7) Service twitter gateway](#7-service-twitter-gateway)
+  * [Cas d'interactions](#cas-dinteractions)
+  * [Drivers fonctionnels](#drivers-fonctionnels)
+    + [1) Base de données](#1-base-de-données)
+    + [2) Back-end](#2-back-end)
+    + [3) Front-end](#3-front-end)
+    + [4) Déployement et automation ](#4-déployement-et-automation)
+    + [5) Orchestration](#5-orchestration)
+  * [1) Base de données](#1-base-de-données-1)
+  * [2) Back-end](#2-back-end-1)
+  * [3) Front-end](#3-front-end-1)
+  * [4) Déployement et automation ](#4-déployement-et-automation-1)
+  * [5) Orchestration](#5-orchestration-1)
 
 ---
 
@@ -166,3 +177,67 @@ La partie suivante décrit les différents services de l'application séparémen
 | 7                               | Si l'utilisateur cherche une information sur son TimeLine, le userTimeLine service serait appelé par le search service. |
 | 8                               | Si l'utilisateur cherche une information, le homeTimeLine service serait appelé par le search service. |
 | 9                               | Home timline service aura besoin de l'ensemble des twitte des personnes follower par le user. |
+
+---
+
+## Drivers fonctionnels
+
+> Dans cette partie on va essayer de présenter en globalité l'ensemble des technologies utilisées dans ce projet. En outre, on va justifier ces choix > techniques. La justification importée pour ces choix serait comforme aux aspects suivants:
+> - Performance de la téchnologie.
+> - Compatbilité de la téchnologie de s'intérger avec d'autres technologies. 
+> - Extensibilité pour des nouveaux changements.
+> - Disponibilité technique.
+
+### 1) Base de données
+La base de données qu'on a choisi à utiliser dans ce projet est `PostgreSQL` avec `LiquidBase`. C'est une base de données relationnelle objet, tandis que les autres bases de données telles que MySQL sont purement relationnelles. Cela signifie que PostgreSQL offre des types de données plus complexes et permet aux objets d'hériter des propriétés, mais cela rend également le travail avec PostgreSQL plus complexe. Cela  se traduit par:
+
+| **Aspect** | **Description** |
+| --------------- | --------------- |
+| **Performance** | Même que `PostgreSQL` est trés performantes et permets de gérer plusieurs types de données autres que les types traditionnelles de SQL, elle permet d'optimiser les requêtes en utilisants des outils (tel que ANALYZE) offers par la communité actives qui la supports. |
+| **Compatbilité** | En utilisant Spring Data JPA et Hibernates ORM, on peut aisement connecter notre back-end à la base de données et effectuer toutes les opérations necessaires. |
+| **Extensibilité** | `PostgreSQL` est facilement extensible puisque elle peut intégrer d'autres services. À l'instar des services de métrics et de discovery. Ceci généralement est réalisable en moyennant des APIs. |
+| **Disponibilité** | `PostgreSQL` permet de bien assurer l'archivage des données. En utilisant aussi `LiquidBase` on peut bien assurer la disponibilité des donnée. |
+
+### 2) Back-end
+En ce qui concerne la partie back-end, on a opté à utiliser `Spring`. Ce dernier, est une technologie bien connu et ayant un grand support. Elle est bien connu par le nombre énnorme des modules qui englobe. Cetter richesse technique va permet de réaliser beaucoup de chose sans même s'ennyuer par la configuration. Ses avantages nombreux se manifestent par: 
+
+| **Aspect** | **Description** |
+| --------------- | --------------- |
+| **Performance** |  |
+| **Compatbilité** |  |
+| **Extensibilité** |  |
+| **Disponibilité** |  |
+
+### 3) Front-end
+
+| **Aspect** | **Description** |
+| --------------- | --------------- |
+| **Performance** |  |
+| **Compatbilité** |  |
+| **Extensibilité** |  |
+| **Disponibilité** |  |
+
+### 4) Déployement et automation 
+
+| **Aspect** | **Description** |
+| --------------- | --------------- |
+| **Performance** |  |
+| **Compatbilité** |  |
+| **Extensibilité** |  |
+| **Disponibilité** |  |
+
+### 5) Orchestration
+
+| **Aspect** | **Description** |
+| --------------- | --------------- |
+| **Performance** |  |
+| **Compatbilité** |  |
+| **Extensibilité** |  |
+| **Disponibilité** |  |
+
+
+## 1) Base de données
+## 2) Back-end
+## 3) Front-end
+## 4) Déployement et automation 
+## 5) Orchestration
