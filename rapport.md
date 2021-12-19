@@ -9,6 +9,7 @@
 > * Liste des fonctionnalités recensé par module.
 > * Les inputs et outputs pour chaque fonctionnalité .
 > * Les interconnections éventuelles entre Fonctionnalités.
+>
 > La deuxième partie contient les éléments suivants:
 > * Une description de comment les services sont reliés.
 > * Une manifestation des différents cas d'interactions avec l'utilisateur .
