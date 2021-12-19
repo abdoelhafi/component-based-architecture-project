@@ -39,11 +39,6 @@
     + [3) Front-end](#3-front-end)
     + [4) Déployement et automation ](#4-déployement-et-automation)
     + [5) Orchestration](#5-orchestration)
-  * [1) Base de données](#1-base-de-données-1)
-  * [2) Back-end](#2-back-end-1)
-  * [3) Front-end](#3-front-end-1)
-  * [4) Déployement et automation ](#4-déployement-et-automation-1)
-  * [5) Orchestration](#5-orchestration-1)
 
 ---
 
@@ -186,7 +181,7 @@ La partie suivante décrit les différents services de l'application séparémen
 > - Performance de la téchnologie.
 > - Compatbilité de la téchnologie de s'intérger avec d'autres technologies. 
 > - Extensibilité pour des nouveaux changements.
-> - Disponibilité technique.
+> - Disponibilité des services.
 
 ### 1) Base de données
 La base de données qu'on a choisi à utiliser dans ce projet est `PostgreSQL` avec `LiquidBase`. C'est une base de données relationnelle objet, tandis que les autres bases de données telles que MySQL sont purement relationnelles. Cela signifie que PostgreSQL offre des types de données plus complexes et permet aux objets d'hériter des propriétés, mais cela rend également le travail avec PostgreSQL plus complexe. Cela  se traduit par:
@@ -203,19 +198,21 @@ En ce qui concerne la partie back-end, on a opté à utiliser `Spring`. Ce derni
 
 | **Aspect** | **Description** |
 | --------------- | --------------- |
-| **Performance** |  |
-| **Compatbilité** |  |
-| **Extensibilité** |  |
-| **Disponibilité** |  |
+| **Performance** | `Spring` offre deux modèles différents de travail selon le nombre des requêtes reçu: `Spring MVC` et `Spring WebFlux`. En ce sens, la performance de `Spring` est indiscutable. En outre, ces différents modules sont bien puissant et capable de satisfaire leurs besions. D'ailleurs, sont support à l'architecture microservice, le rend un choix techniques trés interessants.  |
+| **Compatbilité** | `Spring` est compatible avec le choix de la bes de données pré-précisée. La spécification JPA qu'il intégre permet de bien gérer les données sous forme d'objet. |
+| **Extensibilité** | L'adoptation du modèle REST dans `Spring` le rend trés extensible. Un point de plus qu'on peut utiliser aussi pour gérer nos APIs REST est OPEN API specification. Même l'uilisation du `GraphQL` ne pose plus un soucis. |
+| **Disponibilité** | En utilisant un discovery service tel que Eureka, on peut toujours assurer l'état de nos services. |
 
 ### 3) Front-end
 
+Pour bien présenter l'information à l'utilisatuer final, on choisi d'utiliser une technologies trés intéressante qui'esr `React`. Elle se base sur `JSX`, et supporte `TypeScript`. En plus, sa souplesse lors du développement, permet de suivre plusieurs organisation des composants de la partie front-end. Cette partie front-end sera contenu dans le service gateway. On peut clairement voire l'importance de ce choix en:
+
 | **Aspect** | **Description** |
 | --------------- | --------------- |
-| **Performance** |  |
-| **Compatbilité** |  |
-| **Extensibilité** |  |
-| **Disponibilité** |  |
+| **Performance** | `React` permet de réaliser le UI en travaillant sur plusieur composants séparemenet. Ceci, permet de reutiliser les composants. En addition, il utilise le virtual dom, donc on ne va plus surcharger en travaillant sur le dom. La diversité des librairies qui entrent dans l'écho-system de `React` offre plusieur choix pour faciliter le travail. |
+| **Compatbilité** | `React` s'intégre facilement avec `Spring` en utilisant REST ou `GraphQL`. |
+| **Extensibilité** | On peut toujours ajouter de nouvelles composants en réacts ou d'autres librairies. Aussi, on peut utiliser `Gatsby` static site generator pour générer des pages web statiques et optimiser le UI. |
+| **Disponibilité** | La disponiblité de la partie front-end ne va pas poser un problèmes si on minimise l'utilisation des CDN externes. |
 
 ### 4) Déployement et automation 
 
@@ -234,10 +231,3 @@ En ce qui concerne la partie back-end, on a opté à utiliser `Spring`. Ce derni
 | **Compatbilité** |  |
 | **Extensibilité** |  |
 | **Disponibilité** |  |
-
-
-## 1) Base de données
-## 2) Back-end
-## 3) Front-end
-## 4) Déployement et automation 
-## 5) Orchestration
