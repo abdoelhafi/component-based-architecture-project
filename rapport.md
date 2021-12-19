@@ -13,7 +13,12 @@
 > La deuxième partie contient les éléments suivants:
 > * Une description de comment les services sont reliés.
 > * Une manifestation des différents cas d'interactions avec l'utilisateur .
-> * Une description détaillés de chaque cas.
+> * Une description détaillée de chaque cas.
+> 
+> La troisème partie contient les éléments suivants:
+> * Décomposants des téchnologies utilisées par niveaux.
+> * Une présentation des différents drivers pour chaque niveaux.
+> * Une description détaillée de chaque choix technique. 
 
 - [Projet ALBC](#projet-albc)
   * [Modules, Fonctionnalités, et Inputs/Outputs](#modules-fonctionnalités-et-inputsoutputs)
