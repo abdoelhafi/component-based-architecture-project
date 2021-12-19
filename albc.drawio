@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-19T14:37:16.126Z" agent="5.0 (X11)" etag="K0opYIK-B11i8UX9VnnA" version="16.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-19T14:38:56.514Z" agent="5.0 (X11)" etag="6lEh_sL09AETZiMB0piD" version="16.0.0" type="github" pages="3">
   <diagram id="_sHFa_JMsdH7o2dFBJvN" name="livrable-3">
     <mxGraphModel dx="868" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -297,7 +297,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Copy of L3-tweet-service" id="rQ0GEp6fCdMXVvifnvYW">
+  <diagram name="L3-Search-service" id="rQ0GEp6fCdMXVvifnvYW">
     <mxGraphModel dx="868" dy="1650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="GbTWyuFA3rPkdQMURcqv-0" />
