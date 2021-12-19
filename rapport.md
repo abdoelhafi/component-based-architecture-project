@@ -128,9 +128,14 @@
 
 ---
 
-## Architecture Téchnique
+## Architecture Fonctionnelle
 
 La partie suivante décrit les différents services de l'application séparément, ainsi que les cas d'interactions possibles entre eux.
+
+
+## Architecture Téchnique
+
+La partie suivante décrit les différents services de l'application séparément, ainsi que les cas d'interactions possibles entre les entités englobées, et les téchnologies utilisées dans chaque service.
 
 ![alt](images/tech-architecture0.png)
 
@@ -239,4 +244,4 @@ Pour l'utilisation local on peut utiliser `docker swarm mode` pour l'orchestrati
 | **Performance** | Il permet de voir l'état des réplicas et de controller leurs nombers et de redresser les noeux tombants. Tous se gère automatiquement, en se basant sur un fichier décrivant le stack trés proches au fichier utiliser pour `docker-compose`. |
 | **Compatbilité** | Il trés compatible avec `docker-compose` puisque leurs configurations ne se différnent pas beaucoup. |
 | **Extensibilité** | Ce choix téchnique permet de bien penser les autres choix en cas de production. |
-| **Disponibilité** | Ce service serait toujours disponibles et offre des logs décrivants l'état de l'application. |
+| **Disponibilité** | Ce service serait toujours disponibles et offre des logs décrivants l'état de l'application.* |
