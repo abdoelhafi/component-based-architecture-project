@@ -121,7 +121,7 @@ La partie suivante décrit les différents services de l'application séparémen
 
 ![alt](images/albc-l33.png)
 
-### 2) Service social graph
+### 2) Service du Tweet
 
 ![alt](images/albc-l36.png)
 
@@ -129,7 +129,7 @@ La partie suivante décrit les différents services de l'application séparémen
 
 ![alt](images/albc-l32.png)
 
-### 4) Service user timeline
+### 4) Service Social Graph
 
 ![alt](images/albc-l35.png)
 
@@ -137,7 +137,7 @@ La partie suivante décrit les différents services de l'application séparémen
 
 ![alt](images/albc-l34.png)
 
-### 6) Service tweet
+### 6) Service User Time Line
 
 ![alt](images/albc-l37.png)
 
@@ -258,48 +258,81 @@ Pour l'utilisation local on peut utiliser `docker swarm mode` pour l'orchestrati
 
 ### 1) Twitter home page
 
-![alt](images/twitter-home-page.png)
+![alt](images/albcAcceuil.png)
 
 ### 2) Sign in page
 
-![alt](images/sign-in.png)
+![alt](images/albclogin.png)
 
 ### 3) Uset TimeLine (mes tweet)
 
-![alt](images/tweets.png)
+![alt](images/hometimeline.png)
 
 ### 4) Voir un tweet
 
-![alt](images/view-tweet.png)
+![alt](images/albc-view-tweet.png)
 
 ### 5) Créer un tweet
 
-![alt](images/create-tweet.png)
+![alt](images/albc-create-tweet.png)
 
 ### 6) Editer un tweet
 
 * Edition du tweet
 
-![alt](images/edit-tweet.png)
+![alt](images/albc-edit-tweet.png)
 
-* Tweet edité
-
-![alt](images/tweet-edited.png)
 
 ### 7) Supprimer un tweet
 
-![alt](images/delete-tweet.png)
+![alt](images/albc-delete-tweet.png)
 
-### 8) Les services sur docker
+### 8) Afficher la list des following
+
+![alt](images/socialGraph.png)
+
+### 9) Ajouter un follow a un user
+
+![alt](images/albc-add-follow.png)
+
+
+### 10) Ajouter un follow a un user
+
+![alt](images/albc-add-follow.png)
+
+### 11) Modefier le statut Follow/Unfollw a un user
+
+![alt](images/albc-Unfollw.png)
+
+### 12) Consulter la liste de tous les messages.
+
+![alt](images/messaging.png)
+
+### 13) Les services sur docker
 
 * Arpés l'execution du `docker-compose up`
 
-![alt](images/docker-run.png)
+![alt](images/docker-compose.png)
 
 * Aprés l'execution du `docker ps`
 
-![alt](images/docker-run.png)
+![alt](images/docker-ps.png)
 
-### 9) Base de données
+### 14) Base de données
 
 ![alt](images/database.png)
+
+### 15) Swagger APIs
+
+
+![alt](images/index.jpeg)
+
+### 15) Swagger example
+
+
+![alt](images/swagger-example.jpeg)
+
+### 15) Tous les container docker de tous les composantes
+
+
+![alt](images/portainer.jpeg)
