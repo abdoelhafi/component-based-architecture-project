@@ -1,26 +1,3 @@
-# Projet ALBC
-
-***Membres de groupe:***
-
-*KOTBI Abderrahmane & El HAFI Abdessamad* & Salah Eddine Qatab
-===
-
-> La première partie contient les éléments suivants:
-> * Liste des fonctionnalités recensé par module.
-> * Les inputs et outputs pour chaque fonctionnalité .
-> * Les interconnections éventuelles entre Fonctionnalités.
->
-> La deuxième partie contient les éléments suivants:
-> * Une description de comment les services sont reliés.
-> * Une manifestation des différents cas d'interactions avec l'utilisateur .
-> * Une description détaillée de chaque cas.
-> 
-> La troisème partie contient les éléments suivants:
-> * Décomposants des téchnologies utilisées par niveaux.
-> * Une présentation des différents drivers pour chaque niveaux.
-> * Une description détaillée de chaque choix technique. 
-
-<!-- TOC start -->
 - [Modules, Fonctionnalités, et Inputs/Outputs](#modules-fonctionnalités-et-inputsoutputs)
   * [1) Tweet Service](#1-tweet-service)
   * [2) Search service](#2-search-service)
@@ -67,13 +44,14 @@
   * [13) Les services sur docker](#13-les-services-sur-docker)
   * [14) Base de données](#14-base-de-données)
   * [15) Swagger APIs](#15-swagger-apis)
-  * [15) Swagger example](#15-swagger-example)
-  * [15) Tous les container docker de tous les composantes](#15-tous-les-container-docker-de-tous-les-composantes)
-<!-- TOC end -->
+  * [16) Swagger example](#16-swagger-example)
+  * [17) Tous les container docker de tous les composantes](#17-tous-les-container-docker-de-tous-les-composantes)
+  <!-- TOC end -->
 
 ---
 
 <!-- TOC --><a name="modules-fonctionnalités-et-inputsoutputs"></a>
+
 ## Modules, Fonctionnalités, et Inputs/Outputs
 
 <!-- TOC --><a name="1-tweet-service"></a>
@@ -422,14 +400,14 @@ Pour l'utilisation local on peut utiliser `docker swarm mode` pour l'orchestrati
 
 ![alt](images/index.jpeg)
 
-<!-- TOC --><a name="15-swagger-example"></a>
-### 15) Swagger example
+<!-- TOC --><a name="16-swagger-example"></a>
+### 16) Swagger example
 
 
 ![alt](images/swagger-example.jpeg)
 
-<!-- TOC --><a name="15-tous-les-container-docker-de-tous-les-composantes"></a>
-### 15) Tous les container docker de tous les composantes
+<!-- TOC --><a name="17-tous-les-container-docker-de-tous-les-composantes"></a>
+### 17) Tous les container docker de tous les composantes
 
 
 ![alt](images/portainer.jpeg)
